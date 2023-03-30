@@ -4,6 +4,8 @@ import App from "./App";
 import ImportModule from "./ImportExport/ImportModule";
 import Props from "./Props/Props";
 import arrayMapMethod from "./ArrayMapMethod/ArrayMapMethod";
+import IfElseStatement from "./IfElseStatement/IfElseStatement";
+import TernaryOperator from "./TernaryOperator/TernaryOperator";
 import './index.css';
 
 ReactDOM.render([
@@ -156,4 +158,15 @@ ReactDOM.render(
       </tbody>
     </table>
   </>,document.getElementById("array_map_method")
+);
+
+// If Else Statement
+ReactDOM.render(
+  <>
+    <h2>If Else Statement</h2>
+    <IfElseStatement/>
+
+    <h2>Ternary Operator</h2>
+    <TernaryOperator />
+  </>,document.getElementById("if_else")
 );
