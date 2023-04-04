@@ -1,7 +1,6 @@
 import React from "react";
 // import PropsCards from "../Props/PropsCards";
 import IfCard from "./IfCard";
-import ElseCard from "./ElseCard";
 import IfElseData from "../IfElseStatement/IfElseData";
 
 // const IfCard = (data) => {
@@ -45,6 +44,7 @@ import IfElseData from "../IfElseStatement/IfElseData";
 const TernaryOperator = () => {
     return (
         <>
+            <div className="props">
             {IfElseData.map((data) => {
                 return data.cardtitle === "Aston Martin" && 
                 <IfCard 
@@ -55,6 +55,7 @@ const TernaryOperator = () => {
                     cardlinkP={data.cardlink}
                 />
             })}
+            </div>
         </>
     );
 };

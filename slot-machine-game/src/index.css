@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #000fff;
+  --secondary-color: #1eb63f;
+  --dark-color: #333333;
+  --font: 'Roboto';
+}
+
+body {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--dark-color);
+  font-family: var(--font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 65px;
+  line-height: 1.5;
+  color: var(--primary-color);
+  font-weight: 800;
+  text-align: center;
+}
+
+h4 {
+  font-size: 25px;
+  line-height: 1.5;
+  color: var(--secondary-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.slot-machine {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 50px 100px 0;
+}
+
+.slot-machine-box {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+  border-radius: 20px;
+  padding: 50px;
+  text-align: center;
+}
+
+.machine-icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 30px;
+}
+
+.machine-icon img {
+  width: 100px;
+}
+
+.slot-machine-box h4 {
+  margin-top: 20px;
+}
