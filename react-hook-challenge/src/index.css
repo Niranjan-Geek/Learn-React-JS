@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 1.5;
+  color: rgb(98, 0, 255);
+  font-weight: bold;
+}
+
+button {
+  width: 200px;
+  height: 70px;
+  background: rgb(255, 154, 3);
+  font-size: 20px;
+  color: white;
+  opacity: 1;
+  border: none;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: rgb(216, 131, 5);
+}
+
+.hook {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
