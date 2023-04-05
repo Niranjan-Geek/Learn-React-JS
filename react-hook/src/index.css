@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 1.5;
+  color: cadetblue;
+  font-weight: bold;
+}
+
+button {
+  width: 200px;
+  height: 70px;
+  background: brown;
+  font-size: 20px;
+  color: white;
+  opacity: 1;
+  border: none;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: rgb(236, 50, 50);
+}
+
+.hook {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
