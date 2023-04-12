@@ -9,7 +9,12 @@ const Hook = () => {
     }
 
     const Decrease = () => {
-        setCount(count - 1);
+        if(count > 0){
+            setCount(count - 1);
+        }else{
+            alert("Sorry..! You can not decrease value less than 0 number");
+            setCount(0);
+        }
     }
 
     return(
