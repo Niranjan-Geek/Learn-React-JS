@@ -14,6 +14,40 @@ const Bootstrap = () => {
         >
           Hover Me
         </button>
+        <div className="container mt-5">
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="card">
+                <img src="https://picsum.photos/500/300" className="card-img-top" height={300} />
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="card">
+                <img src="https://picsum.photos/500/301" className="card-img-top" height={300} />
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="card">
+                <img src="https://picsum.photos/500/302" className="card-img-top" height={300} />
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" className="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div
@@ -28,7 +62,10 @@ const Bootstrap = () => {
         <div className="modal-dialog">
           <div className="modal-content bg-success">
             <div className="modal-header">
-              <h1 className="modal-title fs-5 text-white" id="staticBackdropLabel">
+              <h1
+                className="modal-title fs-5 text-white"
+                id="staticBackdropLabel"
+              >
                 Modal title
               </h1>
               <button
