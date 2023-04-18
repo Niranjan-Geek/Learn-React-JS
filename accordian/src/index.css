@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.accordian {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 800px;
+  padding: 40px;
+  background: #5f9ea0;
+}
+
+.accordian-box {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.accordian-box:last-child {
+  margin-bottom: 0;
+}
+
+.accordian-title {
+  width: 100%;
+  padding: 20px;
+  background: #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+
+h4 {
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.accordian-content {
+  padding: 20px;
+  background: #3c888b;
+  display: none;
+}
+
+.accordian-box.active .accordian-content {
+  display: block;
+}
+
+.accordian-content p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.accordian-title:before {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0,-50%);
+  width: 35px;
+  height: 35px;
+  background: #679da0;
+  font-size: 30px;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.accordian-box.active .accordian-title:before {
+  content: "-";
+}
+
+.accordian-title:hover h4 {
+  color: #679da0;
+}
+
+
