@@ -1,11 +1,13 @@
 import React from "react";
+import { MdDelete } from 'react-icons/md';
 
-const Note = () => {
+const Note = ({id, title,message, onDeleteNote}) => {
     return (
         <>
             <div className="note">
-                <h4>Title</h4>
-                <p>Message</p>
+                <h4>{title}</h4>
+                <p>{message}</p>
+                <span className="delete-note" onClick={()=>{onDeleteNote(id)}}><MdDelete /></span>
             </div>
         </>
     )

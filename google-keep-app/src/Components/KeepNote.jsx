@@ -12,11 +12,19 @@ const KeepNote = () => {
         })
     }
 
+    const noteDelete = (id) => {
+        setAddItem((oldNote) => {
+            return oldNote.filter((currentData, index) => {
+                return index !== id;
+            })
+        });
+    }
+
     return(
         <>
             <div className="keep-note">
                 <CreateNote passNote={addNote} />
-                <NoteList />
+                <NoteList itemAdd={addItem} deleteNote={noteDelete} />
             </div>
         </>
     )
