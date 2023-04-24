@@ -11,6 +11,7 @@ const CallAPI = () => {
     useEffect(() => {
         async function getData() {
             const resData = await axios.get(`https://pokeapi.co/api/v2/pokemon-form/${select}`);
+            console.log(resData.data.name);
             setPName(resData.data.name);
             setPImage(resData.data.sprites.front_default)
         }
@@ -31,7 +32,7 @@ const CallAPI = () => {
                 <option value="4">4</option>
                 <option value="25">25</option>
             </select>
-            <div className="box">
+            <div>
                 <h1>You Choose <span>{select}</span> Number</h1>
                 <h2>Your Pokemon Name is <span>{pName}</span></h2>
                 <h2>Pokemon Image:</h2>
