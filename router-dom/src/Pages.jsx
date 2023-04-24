@@ -4,10 +4,12 @@ import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 import Error from "./Error";
+import Menu from "./Menu";
 
 const Pages = () => {
     return(
         <>
+            <Menu />
             <Routes>
                 <Route exact path="/" Component={Home} />
                 <Route exact path="/about" Component={About} />
