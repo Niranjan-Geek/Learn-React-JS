@@ -1,9 +1,7 @@
-import React from "react";
-
-const Home = () => {
+const Home = (props) => {
   return (
     <>
-      <h1>Hello...! This is Home Page.</h1>
+      <h1>Hello...! This is {props.pageName} Page.</h1>
     </>
   );
 }
